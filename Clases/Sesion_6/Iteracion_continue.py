@@ -7,6 +7,7 @@ while i<n:
     i+=1 #siempre va dentro del while
     
     if i==4:
+        print('freeze')
         continue #Omite el 4 porque le dice que se omita el print(i) osea que no lo imprima---> puede hacerse un bloque infinito 
     print(i)
 
