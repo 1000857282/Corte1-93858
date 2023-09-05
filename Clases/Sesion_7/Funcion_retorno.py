@@ -1,7 +1,7 @@
 
 #fUNCIÓN
 def suma (a,b):
-    resultado = a +b 
+    resultado = a + b 
     return resultado
 # def suma (num1,num2):
 #     X = num1 + num2
@@ -9,7 +9,7 @@ def suma (a,b):
 
 #PROGRAMA MAIN
 print("Inicio del progrma")
-a = int(input("Ingrese un numero: "))
-b = int(input("Ingrese otro numero: "))
-resultado = suma(a,b) #iNVOCA FUNCIÓN
-print(resultado)
+c = int(input("Ingrese un numero: "))
+d = int(input("Ingrese otro numero: "))
+resultado1 = suma(c,d) #iNVOCA FUNCIÓN
+print(resultado1)
