@@ -8,7 +8,9 @@ from math import sqrt as raizc
 def componentes(x1,x2,y1,y2):
     comp_x = x2 - x1
     comp_y = y2 - y1 
-    return comp_x ,comp_y
+    #comp_z = 124----> Ejemplo
+    return comp_x ,comp_y #comp_z ---> lo retorna como una Tupla
+
 
 
 def modulo_vector(x,y):
@@ -26,16 +28,12 @@ if p1 == 'y':
 
     if x2>x1 and y2>y1:
         r_1 = componentes(x1,x2,y1,y2)
+        print(r_1)
         x = r_1[0]
         y = r_1[1]
         print(x)
         print(y)
-
-
         print(f'Las componentes rectangulares del vector son:  ({r_1})')
-        
-        #No se como hacer para retornar x y y de ka funcion componentes
-
         calcular_modulo = modulo_vector(x,y)
         print(f'El módulo del vector es: {round(calcular_modulo,2)}')
 
@@ -44,3 +42,4 @@ if p1 == 'y':
 else:
     print('Gracias, vuelva más tarde')
 
+#no funciona para (0,0) y (0,3) arreglarlo

@@ -1,5 +1,5 @@
 
-#fUNCIÓN
+#fUNCIÓN CON PARAMETROS Y RETURN
 def suma (a,b):
     resultado = a + b 
     return resultado

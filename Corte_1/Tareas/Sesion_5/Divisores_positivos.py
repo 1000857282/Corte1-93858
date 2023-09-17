@@ -7,7 +7,7 @@ num = int(input("Ingrese un número para saber los divisores positivos del núme
 r = 0
 
 if num!=0:
-    for i in range(1,num+1,1):
+    for i in range(1,num+1,1): #rango de 1 hasta numero contandolo, aumente de uno en uno, aun que no es necesario ponerlo
         r = num % i
         if r==0:
             print(f"El número {i} es divisible por {num} ")    
