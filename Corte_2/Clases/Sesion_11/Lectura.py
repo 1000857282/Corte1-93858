@@ -1,16 +1,14 @@
 
 
-
 def main_read1():
-    f =open('matrizAsignacion.txt','rt')#rt---> r= read y t = texto --> leer texto   ABRIR EL ARCHIVO
+    f = open('matrizAsignacion.txt','rt')#rt---> r= read y t = texto --> leer texto   ABRIR EL ARCHIVO
     documento = f.read() #Read lee todo
     f.close()
     print(documento)
 
 def main_read2():
-    f =open('matrizAsignacion.txt','rt')#rt---> r= read y t = texto --> leer texto
+    f = open('matrizAsignacion.txt','rt')#rt---> r= read y t = texto --> leer texto
     documento = f.readline().rstrip('\n').split(',') #REadline solo lee la primera linea , el split hace una lista
-
     while documento != [""]: #Si dejo espacio entre las comillas va a esperar un espacio y me va a imprimir un espacio
         print(documento)
         #input('Presione enter')   si lo comento imprime con espacio 
@@ -31,22 +29,22 @@ def suma(lista):
     salida = ""
     for dato in lista:
         resultado  = int(dato[0])+int(dato[1])+int(dato[3])
-        salida*=(str(resultado) + ('\n'))
+        salida+=(str(resultado) + ('\n'))
         return salida
         print(resultado)
 
 def main_read3():
-    f =open('matrizAsignacion.txt','rt')#abrir documento
+    f = open('matrizAsignacion.txt','rt')#abrir documento
     documento = f.readlines() #Readlines me crea una lista y en una lista tengo qeu coger dato por dato
     f.close()#Lo abro lo leo y lo cierro
     lista = []
     for dato in documento: #Coge cada dato del documento
         #print(dato.rstrip('\n').split(','))#quite la linea de salto y separemelos por comas
         lista.append(dato.rstrip('\n').split(','))
-        print(lista)
+    print(lista)
         #suma(lista)
-        a = suma(lista)
-        print(a)
+    a = suma(lista)
+    print(a)
 
     print(documento)
 

@@ -99,6 +99,11 @@ def ordenar_descendente(miLista):
     # miLista.sort(reverse=True)--> no deja modificar la lista original porque no la lee o guard
     # print(miLista)
 
+def sacar_duplicados(miLista):
+    print(miLista)
+    lista1 = list(set(miLista))
+    print(lista1)
+
 def main():
     milista=[2,4,7,8,4,5,7,8,10,2,1]                                                                                                                                                                                                                                     
     opc=''
@@ -116,8 +121,9 @@ def main():
                                                 '10.Suma\n'\
                                                     '11.Comprobar\n'\
                                                         '12.Extender\n'\
-                                                            '13.ordenar ascendentemente\n'\
-                                                                '14.ordenar descendentemente\n'\
+                                                            '13.Ordenar ascendentemente\n'\
+                                                                '14.Ordenar descendentemente\n'\
+                                                                    '15. Sacar numeros duplicados\n'\
                                                 
                                 )
         opc=input('=>')
@@ -150,6 +156,8 @@ def main():
             ordenar_ascendente(milista)
         elif opc == '14':
             ordenar_descendente(milista)
+        elif opc == '15':
+            sacar_duplicados(milista)
 
 
 if __name__=='__main__':

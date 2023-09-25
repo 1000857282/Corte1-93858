@@ -18,7 +18,7 @@ def main(filas,columnas):
 def escalar(matriz): #primero entra en la fila y luego en la columna
     esc=int(input('Ingrese un número para escalar la matriz: '))
     for i in matriz: #for i in range (len(matriz)): #vaya de 0 hasta el numero de filas
-        for j in range(len[i]):#lea el tamaño de i #for j in range(len(matriz[i])): #vaya de cero hasta el numero de columnas en especifico
+        for j in range(len(i)):#lea el tamaño de i #for j in range(len(matriz[i])): #vaya de cero hasta el numero de columnas en especifico
             i[j]*=esc #matriz[i][j]*= esc #miltiplicar por el escalar --> forma mas corta que esc*matriz[i][j]
         print(i) #print(matriz[i]) --> imprime la lista
 
@@ -27,7 +27,7 @@ if __name__=='__main__':
     filas = int(input('Ingrese el numero de filas: '))
     columnas = int(input('Ingrese el numero de columnas: '))
     print('--------ORIGINAL---------')
-    matriz = main (filas,columnas)
+    matriz = main(filas,columnas)
     print('--------ESCALAR----------')
     escalar(matriz)
 
