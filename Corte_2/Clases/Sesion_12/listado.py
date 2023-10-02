@@ -21,11 +21,12 @@ def inscripcion():
             for key,value in estudiantes.items():#Items es para navegr dentro del diccionario f10
                 print(f'Estudiantes: {key}')
                 print(estudiantes[key]['edad'])#Va al diciconario diccionario y  coje el indice de la edad
+                print(estudiantes[key]['codigo'])
+                print(estudiantes[key]['genero'])
             break
         else: 
             print('Opción invalida')
 
-#MIARA CODIGOOOOOOOOOOOOOOOOOO
 def main():
     inscripcion()
 

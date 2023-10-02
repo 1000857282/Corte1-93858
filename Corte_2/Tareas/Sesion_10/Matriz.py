@@ -45,7 +45,7 @@ def organizar(matriz):
             lista_matriz.sort(reverse=True)#la lista se organiza
     for i in range(len(matriz)):
         for j in range(len(matriz[i])):
-            matriz[i][j] = lista_matriz.pop(0)
+            matriz[i][j] = lista_matriz.pop(0)#remplace los indices de la matriz por la lista que esta con los numeros ya organizados
         print(matriz[i])
 
 if __name__=='__main__':

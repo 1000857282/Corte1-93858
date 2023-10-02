@@ -5,7 +5,7 @@ def boom (x):
         boom(x-1)
     else:
         print('Booom!')
-    print(f'finsalizo {x}')
+    print(f'finalizo {x}')
 
 def main():
     boom(5)
