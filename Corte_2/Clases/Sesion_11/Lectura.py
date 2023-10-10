@@ -10,9 +10,9 @@ def main_read2():
     f = open('matrizAsignacion.txt','rt')#rt---> r= read y t = texto --> leer texto
     documento = f.readline().rstrip('\n').split(',') #REadline solo lee la primera linea , el split hace una lista
     while documento != [""]: #Si dejo espacio entre las comillas va a esperar un espacio y me va a imprimir un espacio
-        print(documento)
         #input('Presione enter')   si lo comento imprime con espacio 
         documento = f.readline().rstrip('\n').split(',')
+        print(documento)
     f.close()
 '''
 RSTRIP
@@ -29,7 +29,7 @@ def suma(lista):
     salida = ""
     for dato in lista:
         resultado  = int(dato[0])+int(dato[1])+int(dato[3])
-        salida+=(str(resultado) + ('\n'))
+        salida+=(str(resultado) + ('\n'))#Suma elementos a una lista
         return salida
         print(resultado)
 
