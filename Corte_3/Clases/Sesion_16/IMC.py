@@ -1,12 +1,11 @@
 #-------------CLASES------------------------------- corregir
 class Personas:
 
-#------------ATRIBUTOS : CARACTERISTICAS-----------------------------
+#------------ATRIBUTOS : CARACTERISTICAS------------
     def __init__(self):
         self.nombre = None
         self.altura = None
         self.peso = None
-        pass
 #-------------SETTERS : MODIFICA---------------------------
 
     def setNombre(self,nombre:str):
@@ -17,6 +16,10 @@ class Personas:
 
     def setPeso(self,peso:int):
         self.peso = peso
+        # if peso >0:
+        #     self.peso = peso
+        # else:
+        #     self.peso = 0
 
 #----------------GETTER : OBTIENE------------------------
 
@@ -28,13 +31,15 @@ class Personas:
     
     def getPeso(self):
         if type(self.peso)==None:#TYPE() ME RETORNA EL TIPO DE LAVARIABLE - mirar 
+        # if self.peso==0:
             return 0
         return self.peso
 
-#--------------------METODO : ACCIONES------------------------
+#--------------------METODO : IMC ------------------------
     def imc(self):
         altura = self.getAltura()
         peso = self.getPeso()
+        # print(altura,peso)
 
         imc_valor = (self.peso)/(self.altura/100)**2 #llame al peso de usuario que ingreso
         #return (self.peso)/(self.altura/100)**2#--->para acortar

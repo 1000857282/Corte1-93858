@@ -18,13 +18,14 @@ Metodos: Inicial en minucula y la segunda en mayuscula quemarPokemon
 #CONSTRUCTOR-------------------
 
 class Pokemon():
-    def __init__(self):
+    def __init__(self): #ME crea las variables
         #Self es para indicar el objeto
         self.color = None
         self.categoria = None
         self.tipo = None
         self.codigo = None
         self.nombre = None
+        self.region = 'Colombia'
         #none --> no tiene ningun valor
 
 #METODO-----------------------
@@ -34,26 +35,29 @@ class Pokemon():
         return 'Estoy volando'
     def quemar(self):
         return'Estoy quemando'
-
+    def ataque(self):
+        return'Estoy atacando'
+    
 def main():
-    Pikachu = Pokemon()
+    Pikachu = Pokemon()#aqui me importa todas las variables ya creadas para usarlas aqui
     Pikachu.nombre = 'Pikachu'
     Pikachu.color = 'Amarillo'
     Pikachu.categoria = 'Raton'
     Pikachu.tipo = 'Electrico'
     Pikachu.codigo = 25
-    print(f'{Pikachu.nombre}:{Pikachu.correr()}')
+    print(f'{Pikachu.nombre}:{Pikachu.correr()}\n'\
+          f'region: {Pikachu.region}')
     #print(Pikachu.correr())
     #print(id(Pikachu))
 
     Charizard = Pokemon()
-    
     Charizard.nombre = 'Charizar'
     Charizard.color = 'Naranja'
     Charizard.categoria = 'Dragon'
     Charizard.tipo = 'Fuego'
     Charizard.codigo = 6
-    print(f'{Charizard.nombre}:{Charizard.volar()}')
+    print(f'{Charizard.nombre}:{Charizard.volar()}\n'
+         f'region: {Charizard.region}' )
     #print(Charizard.volar())
     #print(id(Charizard))
 
@@ -63,7 +67,9 @@ def main():
     Ninetales.categoria = 'Zorro'
     Ninetales.tipo = 'Fuego'
     Ninetales.codigo = 38
-    print(f'{Ninetales.nombre}:{Ninetales.quemar()}')
+    Ninetales.region = 'Peruano'
+    print(f'{Ninetales.nombre}:{Ninetales.quemar()}\n'\
+          f'region: {Ninetales.region}')
     #print(Ninetales.quemar())
     #print(id(Ninetales))
 
