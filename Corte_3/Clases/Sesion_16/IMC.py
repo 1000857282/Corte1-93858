@@ -69,7 +69,7 @@ def main():
         usuario.setAltura (int(input('Altura(cm): ')))
         usuario.setPeso (int(input('Peso(Kg): ')))
 
-        pacientes.append(usuario)
+        pacientes.append(usuario)#no se utliza la lista
 
         print(f'Nombre: {usuario.nombre}\n'
               f'Altura: {usuario.altura} cm\n'

@@ -23,7 +23,7 @@ class Estudiantes:
         self.__materia = materia
 
     def setNotas(self,notas: float):
-        self.__notas = notas
+        # self.__notas = notas
         if 0<notas<5:
             self.__notas = notas
 

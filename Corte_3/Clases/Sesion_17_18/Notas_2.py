@@ -5,12 +5,12 @@ class Estudiantes:
     def __init__(self,nombre:str,codigo:int,carrera:str,materia:str,notas:float): #Datos al constructor como parametros
         self.__nombre = nombre
         self.__codigo = codigo
-        self.__carrera = carrera
         self.__materia = materia
+        self.__carrera = carrera
         self.__notas = notas
 
 #------------METODO-SETTERS : MODIFICA---------------------------
-    def setNombre(self,nombre:str):
+    def setNombre(self,nombre:str):#no importa si no se pone el str
         self.__nombre = nombre
 
     def setCodigo(self,codigo:int):
@@ -24,8 +24,8 @@ class Estudiantes:
 
     def setNotas(self,notas: float):
         self.__notas = notas
-        if 0<notas<5:
-            self.__notas = notas
+        # if 0<notas<5:
+            # self.__notas = notas
 
 #--------------METODO--GETTER : OBTIENE------------------------
     def getNombre(self):
@@ -67,8 +67,8 @@ def main():
         nota =[]
         nombre = input('Nombre: ')
         codigo = int(input('Codigo: '))
-        materia = input('Materias: ')
         carrera = input('Carrera: ')
+        materia = input('Materia: ')
         numero_notas = int(input('Cantidad de notas:'))
         x = 1
         while x<numero_notas+1:
@@ -79,15 +79,15 @@ def main():
             else:
                 print('Ingreso una nota invalida: ')
             
-        usuario = Estudiantes(nombre,codigo, materia, carrera, nota)
+        usuario = Estudiantes(nombre,codigo, carrera, materia, nota)
         universidad.append(usuario)
 
 
 
         print(f'Nombre: {usuario.getNombre()}\n'\
             f'Codigo: {usuario.getCodigo()}\n'\
-                f'Materia: {usuario.getMateria()}\n'\
-                    f'Carrera: {usuario.getCarrera()}\n'\
+                f'Materia: {usuario.getCarrera()}\n'\
+                    f'Carrera: {usuario.getMateria()}\n'\
                         f'Nota: {usuario.getNotas()}\n'\
                             f'=> {usuario.getPromedio()}') #Despues de llamar pongo parentesis prque es un metodo
 if __name__=='__main__':
