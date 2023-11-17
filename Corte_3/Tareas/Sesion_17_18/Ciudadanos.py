@@ -8,8 +8,6 @@ Establecer un método "mostrar" que imprima la información, por ejemplo:
 Nombre: Nicolás - Edad: 28 - CC: 1289384734
 
 Establecer un método "esMayorDeEdad" que verifique si el ciudadano es o no mayor de edad.
-
-
 Realice el diagrama de clases (Representación UML)
 '''
 #--------------CONSTRUCTOR---------------------------
@@ -37,16 +35,16 @@ class Ciudadano():
         return self.__edad
     
     #------------METODO-- MOSTRAR--------------------------- 
-    def Mostrar(self):
+    def mostrar(self):
         return f'Nombre: {self.getNombre()} - Edad: {self.getEdad()} - CC: {self.getCedula()}'
     
     #---------METODO--MAYOR-DE-EDAD-------------------------
     def mayorEdad(self):
         edad = self.getEdad()
         if edad>18:
-            return f'{self.getNombre()} Es mayor de edad'
+            return f'{self.getNombre()} es mayor de edad'
         else:
-            return f'{self.getNombre()} Es menor de edad'
+            return f'{self.getNombre()} es menor de edad'
     
 
 def main():
@@ -66,7 +64,7 @@ def main():
                 print('Ingreso una cedula invalida, ingresela de nuevo por favor.')
         break
     ciudadano = Ciudadano(nombre,cedula,edad)
-    print(ciudadano.Mostrar())
+    print(ciudadano.mostrar())
     print(ciudadano.mayorEdad())
 
 
