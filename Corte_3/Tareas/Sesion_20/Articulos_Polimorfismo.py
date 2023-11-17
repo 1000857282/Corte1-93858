@@ -67,8 +67,7 @@ def main():
     ]
 
     productos_sin_iva = generar_articulos(alimentos_sin_iva)
-    productos_con_iva_cinco = generar_articulos(alimentos_con_iva_cinco)
-    productos_con_iva_diecinueve = generar_articulos(alimentos_con_iva_diecinueve)
+  
 
     print("Productos sin IVA:")
     imprimir_producto([productos_sin_iva])
@@ -76,8 +75,6 @@ def main():
     print("\nProductos con IVA al 5%:")
     imprimir_producto([productos_con_iva_cinco])
 
-    print("\nProductos con IVA al 19%:")
-    imprimir_producto([productos_con_iva_diecinueve])
-
+    
 if __name__ == '__main__':
     main()
