@@ -6,20 +6,14 @@ Cree tres subClases para organizar los tres tipos de artículos de la canasta fa
 Utilice una función para calcular el precio bruto y su respectivo valor de IVA de acuerdo a la lista de alimentos de la canasta familiar.
 '''
 # #--------------CONSTRUCTOR----------------------------------
-# class Articulos():
-#     #-----------------ATRIBUTOS-----------------------------
-#     def __init__(self, nombre:str, articulo:str):
-#         self.nombre  = nombre
-#         self.articulo = articulo
-        
-#     pass
 
 
-class Articulo:
+class Articulo():
     def _init_(self, nombre, precio_sin_iva):
         self.nombre = nombre
         self.precio_sin_iva = precio_sin_iva
         self.precio_con_iva = self.calcular_precio_con_iva()
+        
 
     def calcular_precio_con_iva(self):
         pass
@@ -28,9 +22,7 @@ class ArticuloCeroIVA(Articulo):
     def calcular_precio_con_iva(self):
         return self.precio_sin_iva
 
-class ArticuloCincoIVA(Articulo):
-    def calcular_precio_con_iva(self):
-        return self.precio_sin_iva * 1.05
+
 
 class ArticuloDiecinueveIVA(Articulo):
     def calcular_precio_con_iva(self):
@@ -56,25 +48,21 @@ def generar_articulos(lista_alimentos):
 def imprimir_producto(productos):
     for productos_iva in productos:
         for articulo in productos_iva:
-            precio_sin_iva = round(articulo.precio_sin_iva, 2)
-            precio_con_iva = round(articulo.precio_con_iva, 2)
-            print(f"{articulo.nombre}: \n\
-Precio sin IVA: {precio_sin_iva} \n\
-Precio con IVA: {precio_con_iva}")
+  
 
 def main():
     alimentos_sin_iva = [
-        ("Manzana", 10, 0),
+        ("Azucar", 10, 0),
         ("Pan", 5, 0),
     ]
 
     alimentos_con_iva_cinco = [
-        ("Q", 20, 5),
-        ("Yogur", 15, 5),
+        ("Pasta", 20, 5),
+        ("Banano", 15, 5),
     ]
 
     alimentos_con_iva_diecinueve = [
-        ("Carne", 30, 19),
+        ("leche", 30, 19),
         ("Pescado", 25, 19),
     ]
 
