@@ -74,7 +74,7 @@ def main():
 
     print("\nProductos con IVA al 5%:")
     imprimir_producto([productos_con_iva_cinco])
-
+#terinart y corregir codigo porque lo borree en clase de entrega de notas 7n7
     
 if __name__ == '__main__':
     main()

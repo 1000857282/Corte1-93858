@@ -93,6 +93,6 @@ def main():
     # print(darSaludo(ciudadano1))
 #Vn = VB/1.19 ---> calcular el iva
 
-
+    
 if __name__ == '__main__':
     main()
